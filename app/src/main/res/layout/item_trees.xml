@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardElevation="10.0dp"
+    app:cardCornerRadius="20.0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="205dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="4dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Nombre"
+            tools:textSize="24sp"
+            tools:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_scientificName"
+            android:layout_width="204dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            tools:text="Nombre Cientifico"
+            tools:textSize="18sp"
+            tools:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="207dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_scientificName"
+            tools:text="Descripción"
+            tools:textSize="18sp"
+            tools:textStyle="normal" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/img_tree"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+</com.google.android.material.card.MaterialCardView>
